@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!--properties配置，主要用于加载外部的properties的配置文件-->
+    <properties resource="db/db.properties"></properties>
+
+    <!--environments用于选择数据源
+        通过default属性来指定当前项目运行使用的是哪个数据源
+    -->
+    <environments default="development">
+       <!--id用于让default属性指定 -->
+        <environment id="development">
+            <!--
+                transactionManager用于配置事务管理，默认情况下使用的是JDBC事务管理
+            -->
+            <transactionManager type="JDBC"/>
+            <!--dataSource 具体数据源的链接信息-->
+            <dataSource type="POOLED">
+                <property name="driver" value="${driver}"/>
+                <property name="url" value="${url}"/>
+                <property name="username" value="${username}"/>
+                <property name="password" value="${password}"/>
+            </dataSource>
+        </environment>
+
+        <environment id="product">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="${driver}"/>
+                <property name="url" value="${url}"/>
+                <property name="username" value="${username}"/>
+                <property name="password" value="${password}"/>
+            </dataSource>
+        </environment>
+
+        <environment id="test">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="${driver}"/>
+                <property name="url" value="${url}"/>
+                <property name="username" value="${username}"/>
+                <property name="password" value="${password}"/>
+            </dataSource>
+        </environment>
+    </environments>
+    <!--mapper主要用于我们在外部的映射配置文件
+        在主配置文件中需要引入加载映射配置文件
+    -->
+    <mappers>
+        <!--mapper主要用于引入一个具体的映射文件，用resource的方式来引入-->
+        <mapper resource="mapper/usersMapper.xml"/>
+    </mappers>
+</configuration>
