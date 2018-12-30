@@ -11,13 +11,14 @@
 5.使用了Javaweb开发常用的三层架构体系构建的项目
 ### 实现功能：
 
+
     1.显示所用的用户列表（全查找用户表）
     2.查看用户详情信息(单个查询用户表中的单一个记录)
     3.修改用户信息(根据id号来进行update)
     4.增加用户(创建新的字段)
     5.删除用户(根据用户id来删除单个用户)
     6.显示用户状态，并提供修改用户状态()
-
+    7.管理员登录功能
     基本的客户管理，增删改查用户，并提供真删除用户，和假删除用户
 
 ### 技术节点：
@@ -29,11 +30,14 @@
 
 ### 项目展示：
 #### 概览：
-![](http://p8i28834i.bkt.clouddn.com/TIM%E6%88%AA%E5%9B%BE20180929205003.png)
+![](http://xiaolitongxue.top/TIM%E6%88%AA%E5%9B%BE20180929205003.png)
 
 #### 详情页面：
-![](http://p8i28834i.bkt.clouddn.com/%E6%9F%A5%E7%9C%8B%E7%94%A8%E6%88%B7%E8%AF%A6%E6%83%85%28%E5%8F%AF%E4%BF%AE%E6%94%B9%E4%BF%A1%E6%81%AF%29%E9%A1%B5%E9%9D%A2.png)
+![](http://xiaolitongxue.top/%E6%9F%A5%E7%9C%8B%E7%94%A8%E6%88%B7%E8%AF%A6%E6%83%85%28%E5%8F%AF%E4%BF%AE%E6%94%B9%E4%BF%A1%E6%81%AF%29%E9%A1%B5%E9%9D%A2.png)
 
 #### 添加用户页面：
-![](http://p8i28834i.bkt.clouddn.com/%E6%B7%BB%E5%8A%A0%E7%94%A8%E6%88%B7%E9%A1%B5%E9%9D%A2.png)
-### 遇到了很多问题：
+![](http://xiaolitongxue.top/%E6%B7%BB%E5%8A%A0%E7%94%A8%E6%88%B7%E9%A1%B5%E9%9D%A2.png)
+### 12.30更新（新增了管理员登录功能）
+#### 登录页面
+![](http://xiaolitongxue.top/%E7%99%BB%E5%BD%95%E9%A1%B5%E9%9D%A2.png)
+
