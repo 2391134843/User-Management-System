@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="entity.Admin">
+
+    <select id="login" resultType="entity.Admin">
+        SELECT *FROM  admin WHERE  a_email = #{a_email} AND a_password = #{a_password}
+    </select>
+    <!--<select id="findById" resultType="entity.Users">-->
+    <!--SELECT *FROM users WHERE id=#{id}-->
+    <!--</select>-->
+    <!--<select id="login" resultMap="forAdmin">-->
+        <!--SELECT *FROM admin-->
+        <!--&#45;&#45;                 动态构造mybatis的sql语句-->
+        <!--<if test="a_email != null" >-->
+            <!--where a_email = #{a_email} AND a_password = #{a_password}-->
+        <!--</if>-->
+    <!--</select>-->
+    <!--<resultMap id="forAdmin" type="entity.Admin">-->
+        <!--<id property="a_email" column="a_email"></id>-->
+        <!--<id property="a_password" column="a_password"></id>-->
+        <!--&lt;!&ndash;先数据库中的字段，后面property填写实体类属性&ndash;&gt;-->
+        <!--<result column="username" property="a_password"></result>-->
+        <!--<collection property="addresses" column="id" ofType="entity.Address" select="getAddress"></collection>-->
+    <!--</resultMap>-->
+</mapper>
